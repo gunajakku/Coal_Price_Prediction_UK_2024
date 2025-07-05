@@ -1,0 +1,26 @@
+# Set the default behavior, in case people don't have core.autocrlf set.
+* text=auto
+# Explicitly declare text files you want to always be normalized and converted
+# to native line endings on checkout.
+*.html text
+*.css text
+*.js text
+*.py text
+*.ipynb text
+*.sql text
+*.md text
+*.txt text
+*.yml text
+*.json text
+*.csv text
+*.tsv text
+# Declare files that will always have LF line endings, no matter what.
+# Useful for shell scripts.
+*.sh text eol=lf
+# Mark all files that are truly binary and should not be modified.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.pdf binary
+*.pkl filter=lfs diff=lfs merge=lfs -text
